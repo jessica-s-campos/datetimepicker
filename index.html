@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="estilo.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js" integrity="sha512-sR3EKGp4SG8zs7B0MEUxDeq8rw9wsuGVYNfbbO/GLCJ59LBE4baEfQBVsP2Y/h2n8M19YV1mujFANO1yA3ko7Q==" crossorigin="anonymous"></script>
+<script src="datePicker.js"></script>
+
+<script>
+    var idComponente = "DataTeste";
+</script>
+
+<div style="display: flex">
+    <input type="text" id="DataTeste" placeholder="__/__/____ __:__:__">
+    <button style="width: 20px; height: 20px;" class="btn btn-outline-secondary" id="buttonCalendar_DataTeste" onclick="buttonCalendarComponent('DataTeste')" type="button">
+        <em class="fas fa-calendar-alt" title="Calendario" style="padding-right: 0px"></em>
+    </button>
+</div>
+
+<div id="calendar-DataTeste" class="dropdown-content" style="z-index:6666">
+    <div id="DateTimePicker">
+        <div class="dateTimePicker">
+            <div class="datePicker">
+                <div class="cabecalho">
+                    <div class="seta" id="prev-DataTeste"><button>P</button></div>
+                    <div class="mes"><span id="nome-mes-DataTeste">Mês</span> - <span id="nome-ano-DataTeste">2020</span></div>
+                    <div class="seta" id="next-DataTeste"><button>N</button></div>
+                </div>
+                <div class="dias-semana">
+                    <div id="DOM">DOM</div>
+                    <div id="SEG">SEG</div>
+                    <div id="TER">TER</div>
+                    <div id="QUA">QUA</div>
+                    <div id="QUI">QUI</div>
+                    <div id="SEX">SEX</div>
+                    <div id="SAB">SAB</div>
+                </div>
+                <div class="dias">
+                    <div class="semana">
+                        <span class="DOM"></span>
+                        <span class="SEG"></span>
+                        <span class="TER"></span>
+                        <span class="QUA"></span>
+                        <span class="QUI"></span>
+                        <span class="SEX"></span>
+                        <span class="SAB"></span>
+                    </div>
+                    
+                    <div class="semana"> 
+                        <span class="DOM"></span>
+                        <span class="SEG"></span>
+                        <span class="TER"></span>
+                        <span class="QUA"></span>
+                        <span class="QUI"></span>
+                        <span class="SEX"></span>
+                        <span class="SAB"></span>
+                    </div>
+                    
+                    <div class="semana">
+                        <span class="DOM"></span>
+                        <span class="SEG"></span>
+                        <span class="TER"></span>
+                        <span class="QUA"></span>
+                        <span class="QUI"></span>
+                        <span class="SEX"></span>
+                        <span class="SAB"></span>
+                    </div>
+                    
+                    <div class="semana">
+                        <span class="DOM"></span>
+                        <span class="SEG"></span>
+                        <span class="TER"></span>
+                        <span class="QUA"></span>
+                        <span class="QUI"></span>
+                        <span class="SEX"></span>
+                        <span class="SAB"></span>
+                    </div>
+                    
+                    <div class="semana">
+                        <span class="DOM"></span>
+                        <span class="SEG"></span>
+                        <span class="TER"></span>
+                        <span class="QUA"></span>
+                        <span class="QUI"></span>
+                        <span class="SEX"></span>
+                        <span class="SAB"></span>
+                    </div>
+                    
+                    <div class="semana">
+                        <span class="DOM"></span>
+                        <span class="SEG"></span>
+                        <span class="TER"></span>
+                        <span class="QUA"></span>
+                        <span class="QUI"></span>
+                        <span class="SEX"></span>
+                        <span class="SAB"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="timePicker">
+                <div class="horario">
+                    <div>
+                        <div class="seta-time-picker" ><button id="next-hour-DataTeste">N</button></div>                
+                        <div class="hora">
+                            <input id="hora-DataTeste" type="text" value="" placeholder="00">           
+                        </div>
+                        <div class="seta-time-picker"><button id="prev-hour-DataTeste">P</button></div>
+                    </div>
+                    <div>
+                        <div class="seta-time-picker"><button id="next-min-DataTeste">N</button></div>                
+                        <div class="min">
+                            <input id="min-DataTeste" type="text" value="" placeholder="00">           
+                        </div>
+                        <div class="seta-time-picker"><button  id="prev-min-DataTeste">P</button></div>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button id="btn-today" onclick="Hoje('DataTeste')">Hoje</button>
+        <button id="btn-ok" onclick="Ok('DataTeste')">OK</button>
+    </div>
+</div>
+

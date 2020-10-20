@@ -1,0 +1,161 @@
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid #E0DEDE;
+    padding: 4px 6px;
+    z-index: 1;
+  }
+
+  .timePicker {
+    width: 90px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .seta-time-picker {
+    padding: 2.5rem 0 2.5rem 0;
+  }
+
+  .horario {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .horario input {
+    width: 30px;
+    height: 30px;
+    font-size: 1.3rem;
+    color: gray;
+    border: 1px solid rgb(208, 206, 206 );
+    text-align: center;
+  }
+
+  .dateTimePicker {   
+    width: 310px;
+    height: 250px;
+    border: 1px solid #D0CECE;
+    border-radius: 0.5rem;
+    display: flex;
+  }
+
+  .dateTimePicker i {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    transition: 0.25s;
+  }
+
+  .dateTimePicker i:hover {
+    transform: scale(1.6);
+  }
+
+  .dateTimePicker i {
+    color: rgb(12, 132, 230);
+    font-size: 1.2rem;
+  }
+
+  .datePicker {
+    width: 220px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #D0CECE;
+  }
+
+  .cabecalho {
+    display: flex;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid #D0CECE;
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  .mes {
+    width: 20rem;
+  }
+
+  .seta {
+    width: 5vw;
+  }
+
+  .dias-semana {
+    display: flex;
+    border-bottom: 1px solid #D0CECE;
+  }
+
+  .dias-semana div {
+    width: 5rem;
+    text-align: center;
+  }
+
+  .dias:hover {
+    cursor: pointer;
+  }
+
+  .semana {
+    width: 220px;
+    display: flex;
+  }
+
+  .dias span {
+    width: 1.94rem;
+    height: 1.72rem;
+    border: 1px solid transparent;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .dias .SEG:hover,
+  .dias .TER:hover,
+  .dias .QUA:hover,
+  .dias .QUI:hover,
+  .dias .SEX:hover,
+  .dias .DOM:hover,
+  .dias .SAB:hover {
+    background-color: rgba(233, 234, 235, 0.651);
+    color: rgb(12, 132, 230);
+    border: 1px solid rgb(12, 132, 230);
+    font-weight: 600;
+  }
+
+  .footer {
+    margin-top: 0.5rem;
+    width: 310px;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer div {
+    border: 1px solid rgb(12, 132, 230);
+    border-radius: 4px;
+    font-size: 1rem;
+    color: rgb(12, 132, 230);
+    background-color: whitesmoke;
+    width: 6rem;
+    height: 25px;
+    margin: 0.5rem 0 0.5rem 0;
+    transition: 0.25s transform;
+    text-align:center;
+    cursor:pointer;
+  }
+
+  .footer div:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(12, 132, 230);
+    transform: scale(1.05);
+  }
